@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #388359;
+    padding: 0 69px;
+    height: 70px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .nav .logo {
+    font-family: cursive;
+  }
+  
+  .nav .menuitem {
+    column-gap: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .nav .menuitem a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+  }
+  
+  .nav .menuitem a:hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  
+  .nav .btn .button-link {
+    display: inline-block;
+    padding: 17px 30px;
+    border-radius: 7px;
+    border: none;
+    background: greenyellow;
+    color: black; /* Ensure the text is visible */
+    text-align: center;
+    text-decoration: none; /* Remove underline from link */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav .btn .button-link:hover {
+    box-shadow: greenyellow 0px 7px 20px 0px;
+  }
+  
+  
+  .nav .btn button {
+    padding: 17px 30px;
+    border-radius: 7px;
+    border: none;
+    background: greenyellow;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav .btn button:hover {
+    box-shadow: greenyellow 0px 7px 20px 0px;
+  }
+
+/* Style for the new welcome container */
+.welcome-container {
+    flex: 1 100%;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space between welcome container and quiz container */
+}
+
+.welcome-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.welcome-container p {
+    font-size: 16px;
+}
+
+/* Style for the main container */
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.left-container {
+    flex: 0 0 25%; /* Takes up 25% of the width */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #E6F0DC;
+    color: black;
+    height: 139.5vh; /* Full height of the viewport */
+    overflow-y: auto; /* Scroll if content exceeds height */
+    border: none; /* Ensure no border is applied */
+    border-radius: 0; /* Remove rounded corners */
+    border-bottom-right-radius: 8px;
+}
+
+
+
+/* Style for the right container (holds both welcome and quiz containers) */
+.right-container {
+    flex: 1; /* Takes up the remaining width */
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-container {
+  padding: 20px;
+  background-color: #E6F0DC;
+  color: #333;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between welcome container and quiz container */
+}
+
+/* Style for the quiz container */
+.quiz-container {
+  padding: 20px;
+  background-color: #E6F0DC;
+  color: #333;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+/* Style for individual quiz topics */
+.quiz-topic {
+    background-color: #E6F0DC;
+    padding: 20px;
+    width: 45%; /* Adjust width as needed */
+    border-radius: 8px;
+}
+
+/* Style for headings in quiz topics */
+.quiz-topic h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for links in quiz topics */
+.quiz-topic a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 15px 0;
+    margin-left: 60px;
+}
+
+.quiz-topic a:hover {
+    color: #007BFF;
+}
